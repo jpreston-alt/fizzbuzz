@@ -3,6 +3,7 @@
 // For every number that is divisible by only 3 and not 5, console log "Fizz".
 // For every number that is divisible by only 5 and not 3, console.log "Buzz".
 
+//GOAL:
 // 1
 // 2
 // Fizz
@@ -12,10 +13,9 @@
 // 14
 // FizzBuzz
 
+
 function fizzBuzz() {
-
     for (var i = 1; i <= 100; i++) {
-
         if (i % 3 === 0 && i % 5 === 0) {
             console.log("FizzBuzz!");
         } else if (i % 3 === 0) {
@@ -26,11 +26,11 @@ function fizzBuzz() {
             console.log(i);
         }
     }
-
 };
 
 // fizzBuzz();
 
+// --------- PASSING PARAMETERS INTO A FUNCTION --------- //
 function fizzBuzz2(num) {
     if (num % 3 === 0 && num % 5 === 0) {
         console.log("FizzBuzz!");
@@ -55,6 +55,8 @@ fizzBuzz2(Math.floor(Math.random() * 100));
 var randomNumber = Math.floor(Math.random() * 100);
 fizzBuzz2(randomNumber);
 
+
+// --------- RETURNING A VALUE FROM A FUNCTION --------- //
 function fizzBuzz3(num) {
     if (num % 3 === 0 && num % 5 === 0) {
         return "FizzBuzz!";
