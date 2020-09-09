@@ -50,6 +50,11 @@ function fizzBuzz2(num) {
 // fizzBuzz2(33);
 // fizzBuzz2(65);
 
+fizzBuzz2(Math.floor(Math.random() * 100));
+
+var randomNumber = Math.floor(Math.random() * 100);
+fizzBuzz2(randomNumber);
+
 function fizzBuzz3(num) {
     if (num % 3 === 0 && num % 5 === 0) {
         return "FizzBuzz!";
@@ -62,5 +67,5 @@ function fizzBuzz3(num) {
     }
 };
 
-var answer = fizzBuzz3(60);
-console.log(answer);
+// var answer = fizzBuzz3(60);
+// console.log(answer);
